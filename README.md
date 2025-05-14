@@ -3,7 +3,10 @@
 This project detects and classifies **streaks (satellites/space debris)** and **stars** in astronomical images using a **U-Net-like CNN**. It processes 16-bit grayscale TIFF images (4418x4418 pixels), outputs centroid coordinates, and classifies objects based on shape. Designed for ground-based telescope imagery analysis.
 
 ---
+Dataset Link: https://drive.google.com/drive/folders/1AqrixSQ7VLfR5aMmq4HIg0OLqKEbFaUh?usp=sh
+aring
 
+---
 ## 🛠️ Core Algorithms
 1. **U-Net CNN**: Encoder-decoder architecture for precise binary segmentation.
 2. **Binary Cross-Entropy Loss**: Optimizes pixel-wise classification.
