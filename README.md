@@ -30,8 +30,9 @@ models/
 ## ⚙️ Requirements
 - Python 3.8+
 - GPU (Recommended) with CUDA 11.0+
+---
 
-Install dependencies
+## Install dependencies
 pip install -r requirements.txt
 tensorflow==2.12.0
 scikit-image==0.20.0
@@ -39,7 +40,9 @@ matplotlib==3.7.1
 opencv-python==4.7.0
 scikit-learn==1.2.2
 
-🚀 How to Run
+---
+
+##🚀 How to Run
 1. Training
 python src/train.py \
   --data_dir Datasets/ \
@@ -51,14 +54,19 @@ python src/train.py \
   --model_path models/streak_star_detector.h5 \
   --image_path sample.tiff \
   --output_dir results/
-📊 Performance Metrics
+
+---
+   
+##📊 Performance Metrics
 Metric	Score
 Test Accuracy	75.3%
 IoU (Streaks)	0.91
 IoU (Stars)	0.88
 Inference Speed	3s/img (512x512 on RTX 3090)
 
-📝 Notes
+---
+
+##📝 Notes
 Reference Images: Must be binary masks (white=object, black=background).
 
 GPU Memory: >24GB needed for full-resolution training.
